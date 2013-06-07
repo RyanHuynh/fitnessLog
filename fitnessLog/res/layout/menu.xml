@@ -15,7 +15,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="174dp"
-        android:text="Update Record" />
+        android:text="@string/update_record" />
 
     <Button
         android:id="@+id/viewButton"
@@ -24,6 +24,21 @@
         android:layout_alignLeft="@+id/updateButton"
         android:layout_below="@+id/updateButton"
         android:layout_marginTop="70dp"
-        android:text="View Log" />
+        android:text="@string/view_log" />
 
+    
+    <shape >
+
+    <gradient
+        android:angle="90"
+        android:endColor="#C5D9F4"
+        android:startColor="#DCE5FD" />
+
+    <corners
+        android:bottomLeftRadius="5dp"
+        android:bottomRightRadius="5dp"
+        android:topLeftRadius="5dp" >
+    </corners>
+
+</shape>
 </RelativeLayout>
