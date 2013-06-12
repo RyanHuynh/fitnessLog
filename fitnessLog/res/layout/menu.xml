@@ -1,44 +1,25 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".FirstView" >
+<?xml version="1.0" encoding="utf-8"?>
+   <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:background="@drawable/front" >
 
-    <Button
-        android:id="@+id/updateButton"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="174dp"
-        android:text="@string/update_record" />
+       <Button
+           android:id="@+id/updateButton"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentTop="true"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="172dp"
+           android:background="@drawable/front_updateoff" />
 
-    <Button
-        android:id="@+id/viewButton"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/updateButton"
-        android:layout_below="@+id/updateButton"
-        android:layout_marginTop="70dp"
-        android:text="@string/view_log" />
-
-    
-    <shape >
-
-    <gradient
-        android:angle="90"
-        android:endColor="#C5D9F4"
-        android:startColor="#DCE5FD" />
-
-    <corners
-        android:bottomLeftRadius="5dp"
-        android:bottomRightRadius="5dp"
-        android:topLeftRadius="5dp" >
-    </corners>
-
-</shape>
+       <Button
+           android:id="@+id/viewButton"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/updateButton"
+           android:layout_centerInParent="true"
+           android:layout_marginTop="25dp"
+           android:background="@drawable/front_viewoff" />
+       
 </RelativeLayout>

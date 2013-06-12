@@ -17,8 +17,7 @@ public class FirstView extends Activity implements OnClickListener{
 		//Main menu buttons
 		Button updateB = (Button)findViewById(R.id.updateButton);
 		updateB.setOnClickListener(this);
-		Button viewB = (Button)findViewById(R.id.viewButton);
-		viewB.setOnClickListener(this);
+		
 		
 	}
 

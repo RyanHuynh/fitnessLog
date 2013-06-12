@@ -1,14 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+   <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:background="@drawable/body" >
 
-    <ImageButton
-        android:id="@+id/body"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_x="0dp"
-        android:layout_y="0dp"
-        android:src="@drawable/body" />
+       <Button
+           android:id="@+id/backButton"
+           android:layout_width="75dp"
+           android:layout_height="25dp"
+           android:layout_alignParentBottom="true"
+           android:layout_marginLeft="20dp"
+           android:background="@drawable/body_backoff" />
 
-</AbsoluteLayout>
+       <Button
+           android:id="@+id/rotateButton"
+           android:layout_width="75dp"
+           android:layout_height="25dp"
+           android:layout_alignParentBottom="true"
+           android:layout_centerHorizontal="true"
+           android:background="@drawable/body_rotateoff" />
+
+       <Button
+           android:id="@+id/submitButton"
+           android:layout_width="75dp"
+           android:layout_height="25dp"
+           android:layout_alignParentBottom="true"
+           android:layout_marginLeft="265dp"
+           android:background="@drawable/body_submitoff" />
+       
+   </RelativeLayout>
+

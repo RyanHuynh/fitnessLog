@@ -146,7 +146,7 @@ public class dbAdapter {
 		 
 		//Open the database
 			String myPath = DB_PATH + DB_NAME;
-			db = SQLiteDatabase.openDatabase(myPath, null, SQLiteDatabase.OPEN_READONLY);
+			db = SQLiteDatabase.openDatabase(myPath, null, SQLiteDatabase.OPEN_READWRITE);
 		
 		}
 		 
@@ -190,6 +190,10 @@ public class dbAdapter {
 				 }
 			return this;
 	    }
+	 
+	 public void close(){
+		 DBHelper.close();
+	 }
 	 
 	 public Cursor getExerciseListByCategory(String group)
 	 {

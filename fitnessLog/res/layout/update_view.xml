@@ -12,40 +12,28 @@
         android:id="@+id/category"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="24dp"
-        android:text="Large Text"
+        android:layout_marginTop="44dp"
+        android:text="@string/category"
         android:textAppearance="?android:attr/textAppearanceLarge" />
-    
-    <TextView
-        android:id="@+id/exercise"
+
+    <TableLayout
+        android:id="@+id/exerciseList"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/repSet"
+        android:layout_alignLeft="@+id/category"
         android:layout_below="@+id/category"
-        android:layout_marginTop="22dp"
-        android:text="TextView" />
+        android:layout_marginTop="27dp" >
+    </TableLayout>
 
-    <EditText
-        android:id="@+id/inputSet"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/exercise"
-        android:layout_alignTop="@+id/exercise"
-        android:layout_marginLeft="14dp"
-        android:layout_toRightOf="@+id/exercise"
-        android:ems="10" >
-
-        <requestFocus />
-    </EditText>
-
-    <Spinner
-        android:id="@+id/repSet"
+    <Button
+        android:id="@+id/addExercise"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/category" 
-        android:layout_toRightOf="@+id/inputSet"
-        android:entries="@array/rep_set"
-        android:text="@string/repPromt"/>
+        android:layout_alignLeft="@+id/exerciseList"
+        android:layout_below="@+id/exerciseList"
+        android:text="@string/add_exercise" />
 
+    
 </RelativeLayout>

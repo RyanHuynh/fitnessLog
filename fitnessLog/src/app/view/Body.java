@@ -2,6 +2,7 @@ package app.view;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.app.Activity;
 import android.content.Intent;
@@ -17,7 +18,7 @@ public class Body extends Activity {
 	}
 
 	private void configureImage() {
-		ImageButton image = (ImageButton) findViewById(R.id.body);
+		Button image = (Button) findViewById(R.id.submitButton);
 		image.setOnClickListener(new View.OnClickListener() {
 			
 			@Override

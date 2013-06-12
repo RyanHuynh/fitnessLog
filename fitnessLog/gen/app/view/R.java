@@ -25,17 +25,26 @@ public final class R {
     }
     public static final class drawable {
         public static final int body=0x7f020000;
-        public static final int ic_launcher=0x7f020001;
+        public static final int body_backoff=0x7f020001;
+        public static final int body_rotateoff=0x7f020002;
+        public static final int body_submitoff=0x7f020003;
+        public static final int bodymain=0x7f020004;
+        public static final int front=0x7f020005;
+        public static final int front_updateoff=0x7f020006;
+        public static final int front_viewoff=0x7f020007;
+        public static final int ic_launcher=0x7f020008;
+        public static final int test=0x7f020009;
     }
     public static final class id {
-        public static final int action_settings=0x7f090007;
-        public static final int body=0x7f090000;
-        public static final int category=0x7f090003;
-        public static final int exercise=0x7f090004;
-        public static final int inputSet=0x7f090006;
-        public static final int repSet=0x7f090005;
-        public static final int updateButton=0x7f090001;
-        public static final int viewButton=0x7f090002;
+        public static final int action_settings=0x7f090008;
+        public static final int addExercise=0x7f090007;
+        public static final int backButton=0x7f090000;
+        public static final int category=0x7f090005;
+        public static final int exerciseList=0x7f090006;
+        public static final int rotateButton=0x7f090001;
+        public static final int submitButton=0x7f090002;
+        public static final int updateButton=0x7f090003;
+        public static final int viewButton=0x7f090004;
     }
     public static final class layout {
         public static final int body=0x7f030000;
@@ -49,7 +58,9 @@ public final class R {
     }
     public static final class string {
         public static final int action_settings=0x7f050001;
+        public static final int add_exercise=0x7f050008;
         public static final int app_name=0x7f050000;
+        public static final int category=0x7f050007;
         public static final int repPromt=0x7f050004;
         public static final int title_activity_body=0x7f050003;
         public static final int title_activity_update_view=0x7f050002;
