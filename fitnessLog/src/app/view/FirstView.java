@@ -12,7 +12,7 @@ public class FirstView extends Activity implements OnClickListener{
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.menu);
+		setContentView(R.layout.main);
 		
 		//Main menu buttons
 		Button updateB = (Button)findViewById(R.id.updateButton);

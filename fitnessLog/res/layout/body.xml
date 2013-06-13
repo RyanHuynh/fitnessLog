@@ -1,32 +1,277 @@
 <?xml version="1.0" encoding="utf-8"?>
-   <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:background="@drawable/body" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/body" >
+    
+    <ViewSwitcher
+        android:id="@+id/switcher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/navigationBar"
+        android:inAnimation="@android:anim/slide_out_right"
+ 		android:outAnimation="@android:anim/slide_out_right">
 
-       <Button
-           android:id="@+id/backButton"
-           android:layout_width="75dp"
-           android:layout_height="25dp"
-           android:layout_alignParentBottom="true"
-           android:layout_marginLeft="20dp"
-           android:background="@drawable/body_backoff" />
+        <RelativeLayout
+            android:id="@+id/bodyFront"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/body_front"
+            android:onClick="&quot;onClick&quot;" >
 
-       <Button
-           android:id="@+id/rotateButton"
-           android:layout_width="75dp"
-           android:layout_height="25dp"
-           android:layout_alignParentBottom="true"
-           android:layout_centerHorizontal="true"
-           android:background="@drawable/body_rotateoff" />
+            <RelativeLayout
+                android:id="@+id/frontFirstRow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="176dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp" >
 
-       <Button
-           android:id="@+id/submitButton"
-           android:layout_width="75dp"
-           android:layout_height="25dp"
-           android:layout_alignParentBottom="true"
-           android:layout_marginLeft="265dp"
-           android:background="@drawable/body_submitoff" />
-       
-   </RelativeLayout>
+                <Button
+                    android:id="@+id/shoulderButton"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/tagoff"
+                    android:linksClickable="true"
+                    android:text="@string/shoulder" />
 
+                <Button
+                    android:id="@+id/pecsButton"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/tagoff"
+                    android:text="@string/pecs" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/frontSecondRow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/frontFirstRow"
+                android:layout_marginTop="64dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp" >
+
+                <Button
+                    android:id="@+id/bicepsButton"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/tagoff"
+                    android:text="@string/biceps" />
+
+                <Button
+                    android:id="@+id/obliquesButton"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/tagoff"
+                    android:text="@string/obliques" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/frontThirdRow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/frontSecondRow"
+                android:layout_marginTop="102dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp" >
+
+                <Button
+                    android:id="@+id/forearmButton"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/tagoff"
+                    android:text="@string/forearm" />
+
+                <Button
+                    android:id="@+id/absButton"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/tagoff"
+                    android:text="@string/abs" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/frontFourthRow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/frontThirdRow"
+                android:layout_marginTop="88dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp" >
+
+                <Button
+                    android:id="@+id/soleusButton"
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/tagoff"
+                    android:text="@string/soleus" />
+
+                <Button
+                    android:id="@+id/thighsButton"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/tagoff"
+                    android:text="@string/thighs" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bodyBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/body_back" >
+
+            <RelativeLayout
+                android:id="@+id/backFirstRow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="173dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp" >
+
+                <Button
+                    android:id="@+id/shoulderButton2"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/tagoff"
+                    android:text="@string/shoulder" />
+
+                <Button
+                    android:id="@+id/upperbackButton"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/tagoff"
+                    android:text="@string/upperback" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/backSecondRow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/backFirstRow"
+                android:layout_marginTop="68dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp" >
+
+                <Button
+                    android:id="@+id/tricepButton"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/tagoff"
+                    android:text="@string/tricep" />
+
+                <Button
+                    android:id="@+id/backButton"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/tagoff"
+                    android:text="@string/back" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/backThirdRow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/backSecondRow"
+                android:layout_marginTop="102dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp" >
+
+                <Button
+                    android:id="@+id/lowerbackButton"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/tagoff"
+                    android:text="@string/lowerback" />
+
+                <Button
+                    android:id="@+id/glutealsButton"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/tagoff"
+                    android:text="@string/glueteals" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/backFourthRow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/backThirdRow"
+                android:layout_marginTop="98dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp" >
+
+                <Button
+                    android:id="@+id/calfButton"
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/tagoff"
+                    android:text="@string/calf" />
+
+                <Button
+                    android:id="@+id/hamstringButton"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/tagoff"
+                    android:text="@string/hamstring" />
+            </RelativeLayout>
+        </RelativeLayout>
+        
+    </ViewSwitcher>
+    
+    <RelativeLayout
+        android:id="@+id/navigationBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/navigation"
+        android:paddingBottom="0dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <Button
+            android:id="@+id/bodyBackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/body_backoff" />
+
+        <Button
+            android:id="@+id/rotateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/body_rotateoff" />
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/body_submitoff" />
+    </RelativeLayout>
+
+    
+
+</RelativeLayout>
