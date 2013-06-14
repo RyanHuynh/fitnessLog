@@ -1,15 +1,18 @@
 package app.view;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 import android.os.Bundle;
+import android.os.Parcel;
+import android.os.Parcelable;
 import android.view.View;
 import android.widget.Button;
 import android.app.Activity;
 import android.content.Intent;
 import android.widget.ViewSwitcher;
 
-public class Body extends Activity implements View.OnClickListener{
+public class Body extends Activity implements View.OnClickListener, Parcelable{
 	
 	HashMap <String, Integer> tagMap = new HashMap<String,Integer>();
 	Button shoulderTag;
@@ -118,6 +121,13 @@ public class Body extends Activity implements View.OnClickListener{
 		switch(v.getId()){
 			case R.id.submitButton:
 				Intent action = new Intent(Body.this,UpdateView.class);
+				ArrayList<String> tags = new ArrayList<String>();
+				for(String key : tagMap.keySet())
+				{
+					if(tagMap.get(key) == 1)
+						tags.add(key);
+				}
+				action.putExtra("TAG_MAP", tags);
 				startActivity(action);
 				break;
 			case R.id.rotateButton:
@@ -316,5 +326,21 @@ public class Body extends Activity implements View.OnClickListener{
 		tagMap.put("Tricep", 0);
 		tagMap.put("Gluteals", 0);
 		tagMap.put("Calf", 0);
+	}
+
+
+
+	@Override
+	public int describeContents() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+
+
+	@Override
+	public void writeToParcel(Parcel arg0, int arg1) {
+		// TODO Auto-generated method stub
+		
 	}
 }

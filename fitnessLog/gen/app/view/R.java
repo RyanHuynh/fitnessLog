@@ -24,24 +24,27 @@ public final class R {
         public static final int activity_vertical_margin=0x7f040001;
     }
     public static final class drawable {
-        public static final int body=0x7f020000;
-        public static final int body_back=0x7f020001;
-        public static final int body_backoff=0x7f020002;
-        public static final int body_front=0x7f020003;
-        public static final int body_rotateoff=0x7f020004;
-        public static final int body_submitoff=0x7f020005;
-        public static final int front=0x7f020006;
-        public static final int front_updateoff=0x7f020007;
-        public static final int front_viewoff=0x7f020008;
-        public static final int ic_launcher=0x7f020009;
-        public static final int navigation=0x7f02000a;
-        public static final int tagoff=0x7f02000b;
-        public static final int tagon=0x7f02000c;
+        public static final int back_text=0x7f020000;
+        public static final int body=0x7f020001;
+        public static final int body_back=0x7f020002;
+        public static final int body_backoff=0x7f020003;
+        public static final int body_front=0x7f020004;
+        public static final int body_rotateoff=0x7f020005;
+        public static final int body_submitoff=0x7f020006;
+        public static final int front=0x7f020007;
+        public static final int front_updateoff=0x7f020008;
+        public static final int front_viewoff=0x7f020009;
+        public static final int ic_launcher=0x7f02000a;
+        public static final int navigation=0x7f02000b;
+        public static final int shoulder_text=0x7f02000c;
+        public static final int tagoff=0x7f02000d;
+        public static final int tagon=0x7f02000e;
+        public static final int update=0x7f02000f;
+        public static final int upperback_text=0x7f020010;
     }
     public static final class id {
         public static final int absButton=0x7f09000b;
-        public static final int action_settings=0x7f090023;
-        public static final int addExercise=0x7f090022;
+        public static final int action_settings=0x7f090021;
         public static final int backButton=0x7f090015;
         public static final int backFirstRow=0x7f090010;
         public static final int backFourthRow=0x7f090019;
@@ -52,8 +55,6 @@ public final class R {
         public static final int bodyBackButton=0x7f09001c;
         public static final int bodyFront=0x7f090002;
         public static final int calfButton=0x7f09001a;
-        public static final int category=0x7f090020;
-        public static final int exerciseList=0x7f090021;
         public static final int forearmButton=0x7f09000a;
         public static final int frontFirstRow=0x7f090003;
         public static final int frontFourthRow=0x7f09000c;
@@ -71,6 +72,7 @@ public final class R {
         public static final int soleusButton=0x7f09000d;
         public static final int submitButton=0x7f09001e;
         public static final int switcher=0x7f090000;
+        public static final int textAnimation=0x7f090020;
         public static final int thighsButton=0x7f09000e;
         public static final int tricepButton=0x7f090014;
         public static final int updateButton=0x7f09001f;
@@ -78,13 +80,15 @@ public final class R {
     }
     public static final class layout {
         public static final int body=0x7f030000;
-        public static final int main=0x7f030001;
-        public static final int update_view=0x7f030002;
+        public static final int exercise_view=0x7f030001;
+        public static final int main=0x7f030002;
+        public static final int update_view=0x7f030003;
     }
     public static final class menu {
-        public static final int first_view=0x7f080000;
-        public static final int log_view=0x7f080001;
-        public static final int main=0x7f080002;
+        public static final int exercise=0x7f080000;
+        public static final int first_view=0x7f080001;
+        public static final int log_view=0x7f080002;
+        public static final int main=0x7f080003;
     }
     public static final class string {
         public static final int abs=0x7f05000b;
@@ -98,6 +102,7 @@ public final class R {
         public static final int forearm=0x7f05000a;
         public static final int glueteals=0x7f050012;
         public static final int hamstring=0x7f050013;
+        public static final int hello_world=0x7f050016;
         public static final int lowerback=0x7f050011;
         public static final int obliques=0x7f050009;
         public static final int pecs=0x7f050007;
@@ -105,6 +110,7 @@ public final class R {
         public static final int soleus=0x7f05000d;
         public static final int thighs=0x7f05000c;
         public static final int title_activity_body=0x7f050003;
+        public static final int title_activity_exercise=0x7f050015;
         public static final int title_activity_update_view=0x7f050002;
         public static final int tricep=0x7f050010;
         public static final int upperback=0x7f05000e;
